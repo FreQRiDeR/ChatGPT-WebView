@@ -60,3 +60,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+._ViewController.swift
+._ChatGPTWebView
+._ChatGPTWebView.xcodeproj
+._ChatGPTWebViewTests
+._ChatGPTWebViewUITests
