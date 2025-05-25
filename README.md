@@ -1,6 +1,6 @@
-# ChatGPT WebView for iOS 16
+# ChatGPT WebView for iOS 15
 
-A lightweight iOS WebView wrapper for ChatGPT’s web app. Built with Swift and WKWebView, optimized for fast performance and speech-to-text microphone support on iOS 16.
+A lightweight iOS WebView wrapper for ChatGPT’s web app. Built with Swift and WKWebView, optimized for fast performance and speech-to-text microphone support on iOS 15.
 
 ## Features
 - Persistent login
