@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		60A707F32DD5C8A200672D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A707F22DD5C8A200672D6A /* AppDelegate.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		60A707D42DD5BE7800672D6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,7 +27,6 @@
 		60A707C52DD5BE7300672D6A /* ChatGPTWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A707D32DD5BE7800672D6A /* ChatGPTWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A707DD2DD5BE7800672D6A /* ChatGPTWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		60A707F22DD5C8A200672D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -42,6 +37,22 @@
 			);
 			target = 60A707C42DD5BE7300672D6A /* ChatGPTWebView */;
 		};
+		DC562D5E2DE2AECA00C8449A /* Exceptions for "ChatGPTWebView" folder in "ChatGPTWebViewTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LICENSE,
+				README.md,
+			);
+			target = 60A707D22DD5BE7800672D6A /* ChatGPTWebViewTests */;
+		};
+		DC562D5F2DE2AECA00C8449A /* Exceptions for "ChatGPTWebView" folder in "ChatGPTWebViewUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LICENSE,
+				README.md,
+			);
+			target = 60A707DC2DD5BE7800672D6A /* ChatGPTWebViewUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -49,6 +60,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				60A1659F2DD670BA00EDA48F /* Exceptions for "ChatGPTWebView" folder in "ChatGPTWebView" target */,
+				DC562D5E2DE2AECA00C8449A /* Exceptions for "ChatGPTWebView" folder in "ChatGPTWebViewTests" target */,
+				DC562D5F2DE2AECA00C8449A /* Exceptions for "ChatGPTWebView" folder in "ChatGPTWebViewUITests" target */,
 			);
 			path = ChatGPTWebView;
 			sourceTree = "<group>";
@@ -93,7 +106,6 @@
 		60A707BC2DD5BE7300672D6A = {
 			isa = PBXGroup;
 			children = (
-				60A707F22DD5C8A200672D6A /* AppDelegate.swift */,
 				60A707C72DD5BE7300672D6A /* ChatGPTWebView */,
 				60A707D62DD5BE7800672D6A /* ChatGPTWebViewTests */,
 				60A707E02DD5BE7800672D6A /* ChatGPTWebViewUITests */,
@@ -256,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60A707F32DD5C8A200672D6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,12 +422,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ChatGPTWebView/ChatGPTWebView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TT6Y3643ZT;
+				DEVELOPMENT_TEAM = 7WQU2QFCC6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -434,19 +445,18 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.safenet.chatgptwebview;
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphone*]" = "@executable_path/Frameworks";
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freqrider.chatgptwebview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -455,12 +465,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ChatGPTWebView/ChatGPTWebView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TT6Y3643ZT;
+				DEVELOPMENT_TEAM = 7WQU2QFCC6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -478,18 +488,17 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.safenet.chatgptwebview;
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphone*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freqrider.chatgptwebview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
