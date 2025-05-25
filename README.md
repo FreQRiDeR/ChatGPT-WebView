@@ -1,5 +1,5 @@
 <div align="center">
-             <img src="ChatGPTWebView/ChatGPTWebView/Assets.xcassets/AppIcon.png" width="300" />
+             <img src="ChatGPTWebView/ChatGPTWebView/appstore.png" width="300" />
              <h1>ChatGPT-WebView</h1>
 </div>
 
