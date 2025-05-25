@@ -1,3 +1,8 @@
+<div align="center">
+             <img src="ChatGPTWebView/Assets.xcassets/AppIcon.png" width="300" />
+             <h1>ChatGPT-WebView</h1>
+</div>
+
 # ChatGPT WebView for iOS 15
 
 A lightweight iOS WebView wrapper for ChatGPT’s web app. Built with Swift and WKWebView, optimized for fast performance and speech-to-text microphone support on iOS 15.
