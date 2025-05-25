@@ -66,3 +66,5 @@ fastlane/test_output
 ._ChatGPTWebViewTests
 ._ChatGPTWebViewUITests
 ChatGPTWebView/._ChatGPTWebView.swift
+ChatGPTWebViewUITests/._ChatGPTWebViewUITests.swift
+ChatGPTWebViewUITests/._ChatGPTWebViewUITestsLaunchTests.swift
